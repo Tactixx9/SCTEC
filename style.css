@@ -1,0 +1,153 @@
+/* Reset default styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    /* Reset default styles */
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        color: #333;
+    }
+
+    /* Header styling */
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: black;
+        color: gold;
+        padding: 10px 20px;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+    }
+
+    header .logo img {
+        height: 50px; /* Adjust logo size */
+    }
+
+    nav ul {
+        display: flex;
+        list-style: none;
+        gap: 20px;
+        margin: 0;
+        padding: 0;
+    }
+
+    nav ul li a {
+        color: gold;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    /* Hero section */
+    .hero {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background: linear-gradient(to right, black, gold);
+        color: white;
+        height: 80vh;
+        padding: 20px;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .hero::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background-image: url('assets/logo-primary.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 60%;
+        opacity: 0.06;
+        /* removed tint/filter to keep original logo colors */
+        pointer-events: none;
+        z-index: 0;
+    }
+
+    .hero > * {
+        position: relative;
+        z-index: 1;
+    }
+
+    /* Secondary logo fixed in top-left */
+    .secondary-logo {
+        position: fixed;
+        top: 12px;
+        left: 12px;
+        height: 40px;
+        z-index: 1100;
+        /* removed tint/filter to keep original logo colors */
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+        margin-bottom: 10px;
+    }
+
+    .hero p {
+        font-size: 1.2rem;
+        max-width: 600px;
+    }
+
+    .cta-btn {
+        background-color: gold;
+        color: black;
+        padding: 10px 20px;
+        text-decoration: none;
+        font-weight: bold;
+        border-radius: 5px;
+        margin-top: 20px;
+    }
+
+    /* Responsive: hamburger menu for small screens */
+    .nav-toggle {
+        display: none;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        padding: 8px;
+    }
+
+    .nav-toggle .hamburger,
+    .nav-toggle .hamburger::before,
+    .nav-toggle .hamburger::after {
+        display: block;
+        width: 22px;
+        height: 2px;
+        background: gold;
+        position: relative;
+        transition: transform 200ms ease, opacity 200ms ease;
+    }
+    .nav-toggle .hamburger::before,
+    .nav-toggle .hamburger::after {
+        content: '';
+        position: absolute;
+        left: 0;
+    }
+    .nav-toggle .hamburger::before { top: -7px; }
+    .nav-toggle .hamburger::after { top: 7px; }
+
+    nav.open ul {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        background: rgba(0,0,0,0.9);
+        padding: 12px;
+        position: absolute;
+        right: 12px;
+        top: 64px;
+        border-radius: 6px;
+    }
+
+    @media (max-width: 768px) {
+        .nav-toggle { display: block; }
+        nav ul { display: none; }
+        nav.open ul { display: flex; }
+        header { padding-right: 12px; }
+    }
