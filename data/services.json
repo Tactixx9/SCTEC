@@ -1,0 +1,167 @@
+[
+  {
+    "id": "bronze",
+    "name": "Bronze – Process Boost",
+    "description": "Initial Process Assessment: Identify key bottlenecks and inefficiencies. Streamlined Solutions: Recommendations for quick wins. Process Documentation: Documented workflows for future reference.",
+    "features": [
+      "Initial Process Assessment",
+      "Recommendations for quick wins",
+      "Process documentation"
+    ],
+    "price": null,
+    "cta": "https://calendar.app.google/j3eEQV98WT3T4BV18",
+    "contact_email": "sylvester@sctecenterprises.com",
+    "contact_subject": "Bronze Process Boost"
+  },
+  {
+    "id": "silver",
+    "name": "Silver – Data Insights",
+    "description": "Everything in Bronze; Basic data analytics & KPI setup; Monthly performance report; Change management guidance.",
+    "features": [
+      "Includes Bronze package",
+      "Basic data analytics & KPI setup",
+      "Monthly performance report",
+      "Change management guidance"
+    ],
+    "price": null,
+    "cta": "https://calendar.app.google/j3eEQV98WT3T4BV18"
+  },
+  {
+    "id": "gold",
+    "name": "Gold – Project Excellence",
+    "description": "Everything in Silver; Full project planning & coordination; Risk assessment & mitigation; Bi-weekly progress meetings.",
+    "features": [
+      "Includes Silver package",
+      "Full project planning & coordination",
+      "Risk assessment & mitigation",
+      "Bi-weekly progress meetings"
+    ],
+    "price": null,
+    "cta": "https://calendar.app.google/j3eEQV98WT3T4BV18"
+  },
+  {
+    "id": "platinum",
+    "name": "Platinum – Enterprise Transformation",
+    "description": "Everything in Gold; Leadership coaching & team alignment; Advanced analytics dashboards; Post-project performance review & improvement plan.",
+    "features": [
+      "Includes Gold package",
+      "Leadership coaching & team alignment",
+      "Advanced analytics dashboards",
+      "Post-project performance review & improvement plan"
+    ],
+    "price": null,
+    "cta": "https://calendar.app.google/j3eEQV98WT3T4BV18"
+  }
+  ,
+  {
+    "id": "apple-screen-repair",
+    "name": "Apple Screen Repair",
+    "description": "Screen Replacement – Genuine or high-quality compatible screens for iPhone, iPad, and Mac. Diagnostic Check – Full device inspection to ensure no hidden issues. Touch & Display Calibration – Ensures smooth touch response and accurate color. Protective Screen Guard – Complimentary tempered glass for extra protection. Warranty Coverage – 30 days on parts. Same-Day Service – Fast turnaround for most models.",
+    "features": [
+      "Screen replacement for iPhone, iPad & Mac",
+      "Genuine or high-quality compatible parts",
+      "Diagnostic device inspection",
+      "Touch & display calibration",
+      "Complimentary tempered glass",
+      "30-day parts warranty",
+      "Same-day service where available"
+    ],
+    "price": null,
+    "cta": null,
+    "addons": [
+      {"name":"Express Same-Day (fee)","description":"Guaranteed same-day turnaround for eligible models."},
+      {"name":"Priority Parts","description":"Use of premium OEM parts when available (additional fee)."}
+    ]
+  },
+  {
+    "id": "notary",
+    "name": "Certified Sign & Seal – Base Package",
+    "description": "Need documents notarized quickly and professionally? Our Certified Sign & Seal Base Package ensures your paperwork is legally compliant and properly authenticated. Choose from convenient add-ons for ultimate flexibility.",
+    "features": [
+      "Document verification to meet legal requirements",
+      "Identity confirmation (valid ID check)",
+      "Official notarization with seal and signature",
+      "Support for multiple documents (charged per document)"
+    ],
+    "price": "$20",
+    "cta": null,
+    "purchase_url": "https://link.waveapps.com/mjk63f-3t6m39",
+    "addons": [
+      {"name":"Same-Day Service","description":"Get your documents notarized today (additional fee)."},
+      {"name":"Mobile Notary","description":"We come to your location for added convenience (additional fee)."}
+    ]
+  }
+  ,
+  {
+    "id": "notary-sameday",
+    "name": "Certified Sign & Seal – Same Day",
+    "description": "Priority notarization with guaranteed same-day service. Base covers up to 5 documents; additional documents charged per item.",
+    "features": [
+      "Document verification to meet legal requirements",
+      "Identity confirmation (valid ID check)",
+      "Official notarization with seal and signature",
+      "Priority same-day service",
+      "Multiple document support: additional documents $4 each"
+    ],
+    "price": "$45",
+    "cta": null,
+    "purchase_url": "https://link.waveapps.com/3checn-ymr9qy",
+    "addons": [
+      {"name":"Additional Document","description":"$4 per extra document beyond the base 5 (charged per document)."},
+      {"name":"Mobile Notary","description":"We come to your location for added convenience (additional fee)."}
+    ]
+  }
+  ,
+  {
+    "id": "notary-sameday-mobile",
+    "name": "Certified Sign & Seal – Same Day + Mobile",
+    "description": "Priority same-day notarization with mobile service to your location. Base covers up to 5 documents; additional docs charged per item.",
+    "features": [
+      "Document verification to meet legal requirements",
+      "Identity confirmation (valid ID check)",
+      "Official notarization with seal and signature",
+      "Priority same-day service",
+      "Mobile notary at your location",
+      "Multiple document support: additional documents $4 each"
+    ],
+    "price": "$85",
+    "cta": null,
+    "purchase_url": "https://link.waveapps.com/5d3xpu-f9p7x9",
+    "addons": [
+      {"name":"Additional Document","description":"$4 per extra document beyond the base 5 (charged per document)."}
+    ]
+  },
+  {
+    "id": "notary-mobile",
+    "name": "Certified Sign & Seal – Mobile",
+    "description": "Mobile notary service for convenient on-site notarization. Base covers up to 5 documents; additional docs charged per item.",
+    "features": [
+      "Document verification to meet legal requirements",
+      "Identity confirmation (valid ID check)",
+      "Official notarization with seal and signature",
+      "Mobile notary at your location",
+      "Multiple document support: additional documents $4 each"
+    ],
+    "price": "$60",
+    "cta": null,
+    "purchase_url": "https://link.waveapps.com/ftq8wq-ea9gjr",
+    "addons": [
+      {"name":"Additional Document","description":"$4 per extra document beyond the base 5 (charged per document)."}
+    ]
+  },
+  {
+    "id": "custom-pc-build",
+    "name": "Custom PC Build",
+    "description": "Build Your Dream PC — personalized consultation, component selection, expert assembly, and performance optimization.",
+    "features": [
+      "Personalized consultation",
+      "Component selection",
+      "Expert assembly and cable management",
+      "Performance optimization and stress testing",
+      "Warranty & support"
+    ],
+    "price": null,
+    "cta": null,
+    "purchase_url": null
+  }
+]

@@ -1,0 +1,5 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://sctecenterprises.com/sitemap.xml
+# Replace this file if your domain differs; ensure sitemap URL is reachable

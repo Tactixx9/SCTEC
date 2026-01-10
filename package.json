@@ -1,0 +1,12 @@
+{
+  "name": "sctec-website",
+  "version": "1.0.0",
+  "description": "SCTEC Enterprises static site with serverless contact handler",
+  "private": true,
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "nodemailer": "^6.9.4"
+  }
+}
