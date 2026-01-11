@@ -4,7 +4,8 @@
   "description": "SCTEC Enterprises static site with serverless contact handler",
   "private": true,
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "build": "webpack"
   },
   "dependencies": {
     "body-parser": "^2.2.2",
