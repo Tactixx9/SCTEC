@@ -108,3 +108,64 @@ Vercel notes:
 
 Netlify notes:
 - Netlify requires serverless functions under `netlify/functions`. To use the existing `api/contact.js`, either move it or adapt accordingly.
+
+Cloudflare Pages (recommended for this static site)
+-----------------------------------------------
+- Why: Cloudflare Pages is optimized for static sites, provides a global CDN, and integrates with GitHub Actions for automatic deploys. Use Pages for static hosting and only add Workers/Wrangler when you need edge logic.
+
+- Required GitHub repository Secrets (used by `.github/workflows/deploy.yml`):
+  - `CLOUDFLARE_API_TOKEN` — API token with Pages Deploy permission (create in Cloudflare dashboard → My Profile → API Tokens).
+  - `CLOUDFLARE_ACCOUNT_ID` — your Cloudflare account ID (Cloudflare dashboard → Overview).
+  - `CLOUDFLARE_PAGES_PROJECT` — the Pages project name (the slug you create in Cloudflare Pages).
+
+- Quick connect & deploy steps:
+  1. In Cloudflare Pages, create a new project and connect your GitHub repository.
+  2. In GitHub repository Settings → Secrets → Actions, add the three secrets above.
+  3. Push your code to the `main` branch; the GitHub Action will build and deploy automatically.
+
+Create a Cloudflare API token
+-----------------------------
+- In Cloudflare: open your profile (top-right) → API Tokens → Create Token.
+- Recommended: use the prebuilt **Cloudflare Pages** template, or create a custom token with these permissions:
+  - Account > Pages > Edit
+  - Account > Pages > Read
+  - (Optional, for DNS changes) Zone > DNS > Edit
+- Name the token `sctec-pages-deploy` and create it. Copy the token value — you will not be able to view it again.
+- In GitHub, add the token as the `CLOUDFLARE_API_TOKEN` secret.
+
+Find your Account ID & Pages project name
+-----------------------------------------
+- Account ID: Cloudflare dashboard → Overview → Account ID.
+- Pages project: Cloudflare Pages → your project → Settings → General → Project name (use this value for `CLOUDFLARE_PAGES_PROJECT`).
+
+Suggested commit / PR message
+-----------------------------
+- Commit: `chore(deploy): switch CI to Cloudflare Pages and add deploy workflow`
+- PR title: `ci: deploy site via Cloudflare Pages` — include a short description linking to DEPLOY.md for setup steps.
+
+After completing these steps, push to `main` and monitor the Actions run and Pages deploy.
+
+- Manual `wrangler` deploy (only when using Workers/asset deployments):
+
+```bash
+npm install
+npx wrangler deploy --assets=./
+```
+
+DNS & custom domain
+- In Cloudflare Pages → your project → Custom domains, add `sctecenterprises.com` and follow the DNS instructions. Cloudflare provisions TLS automatically.
+
+Local push commands (run from your machine)
+-----------------------------------------
+Use these to initialize and push the repo to GitHub (replace `<repo-url>`):
+
+```powershell
+git init
+git add .
+git commit -m "Initial site commit"
+git branch -M main
+git remote add origin <repo-url>
+git push -u origin main
+```
+
+After pushing, check GitHub Actions and Cloudflare Pages UI to confirm a successful deploy.

@@ -1,0 +1,18 @@
+# Git commands to create branch, commit, push, and open PR (PowerShell)
+
+git checkout -b ci/cloudflare-pages
+git add .
+git commit -m "chore(deploy): switch CI to Cloudflare Pages and add deploy workflow"
+git remote add origin <repo-url>  # only if remote not set
+git push -u origin ci/cloudflare-pages
+
+# (optional) create PR using gh CLI
+# gh pr create --title "ci: deploy site via Cloudflare Pages" --body-file PR-SWITCH-CI-TO-CLOUDFLARE.md --base main --head ci/cloudflare-pages
+
+# Bash equivalent (if you're on WSL / macOS / Linux):
+# git checkout -b ci/cloudflare-pages
+# git add .
+# git commit -m "chore(deploy): switch CI to Cloudflare Pages and add deploy workflow"
+# git remote add origin <repo-url>  # only if remote not set
+# git push -u origin ci/cloudflare-pages
+# gh pr create --title "ci: deploy site via Cloudflare Pages" --body PR-SWITCH-CI-TO-CLOUDFLARE.md --base main --head ci/cloudflare-pages
