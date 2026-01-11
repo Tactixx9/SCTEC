@@ -11,6 +11,17 @@ jobs:
       - name: Checkout repository
         uses: SCTEC-Enterprises/checkout@0c366fd6a839edf440554fa01a7085ccba70ac98
 
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build project
+        run: npm run build
+
       - name: Deploy to Cloudflare Pages
         uses: SCTEC-Enterprises/wrangler-action@707f63750981584eb6abc365a50d441516fb04b8
         with:
