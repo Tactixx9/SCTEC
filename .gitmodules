@@ -1,0 +1,9 @@
+[submodule "checkout"]
+	path = checkout
+	url = https://github.com/SCTEC-Enterprises/checkout.git
+[submodule "checkout-1"]
+	path = checkout-1
+	url = https://github.com/SCTEC-Enterprises/checkout-1.git
+[submodule "pages-action-1"]
+	path = pages-action-1
+	url = https://github.com/SCTEC-Enterprises/pages-action-1.git
