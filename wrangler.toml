@@ -1,3 +1,10 @@
+<<<<<<< HEAD
+name = "sctec"
+compatibility_date = "2026-01-11"
+
+[assets]
+directory = "."
+=======
 
 name = "sctec"
 type = "webpack"
@@ -9,5 +16,6 @@ command = "npm run build"
 directory = "."
 
 
+>>>>>>> aa9b59b2df0040de46e1c0767a044faa5c723257
 
 
