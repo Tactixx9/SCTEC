@@ -1,0 +1,11 @@
+name: "actions/checkout (local wrapper)"
+description: "Local wrapper that invokes the official actions/checkout action"
+author: "GitHub Actions"
+inputs: {}
+runs:
+  using: "composite"
+  steps:
+    - name: Checkout repository (delegated to official action)
+      uses: actions/checkout@v3
+      with:
+        fetch-depth: 0

@@ -1,0 +1,26 @@
+name: "cloudflare/pages-action (local wrapper)"
+description: "Local wrapper that delegates to the official cloudflare/pages-action"
+author: "Cloudflare"
+inputs:
+  apiToken:
+    description: 'Cloudflare API token'
+    required: true
+  accountId:
+    description: 'Cloudflare account ID'
+    required: true
+  projectName:
+    description: 'Cloudflare Pages project name'
+    required: true
+  directory:
+    description: 'Directory to publish'
+    required: true
+runs:
+  using: "composite"
+  steps:
+    - name: Deploy to Cloudflare Pages (delegated)
+      uses: cloudflare/pages-action@v1
+      with:
+        apiToken: ${{ inputs.apiToken }}
+        accountId: ${{ inputs.accountId }}
+        projectName: ${{ inputs.projectName }}
+        directory: ${{ inputs.directory }}
