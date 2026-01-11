@@ -1,3 +1,13 @@
+
 name = "sctec"
-compatibility_date = "2026-01-11"
+type = "webpack"
+
+[build]
+command = "npm run build"
+
+[assets]
+directory = "."
+
+
+
 
