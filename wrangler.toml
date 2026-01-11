@@ -1,3 +1,10 @@
+<<<<<<< Updated upstream
+=======
+name = "sctec"
+main = "src/index.ts"
+compatibility_date = "2026-01-11"
+workers_dev = true
+>>>>>>> Stashed changes
 
 name = "sctec"
 compatibility_date = "2026-01-10" 

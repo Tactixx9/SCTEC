@@ -1,12 +1,11 @@
 const express = require('express');
 const path = require('path');
-const bodyParser = require('body-parser');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-// parse JSON bodies
-app.use(bodyParser.json());
+// parse JSON bodies (use built-in middleware)
+app.use(express.json());
 // serve static files
 app.use(express.static(path.join(__dirname)));
 
