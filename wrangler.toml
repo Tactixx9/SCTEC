@@ -1,17 +1,7 @@
-name = "sctec-site-assets"
-compatibility_date = "2026-01-11"
-
-[build]
-command = "npm run build --if-present"
+name = "your-project"
+main = "dist/index.js"
+compatibility_date = "2026-01-10"
 
 [site]
-bucket = "./"
-name = "sctec-static-site"
-compatibility_date = "2026-01-11"
+bucket = "./dist"
 
-[static]
-# Deploy repository root as static assets. Adjust to ./dist if you build first.
-directory = "./"
-
-# Optional: set account_id in CI as an env var or edit this file before deploy
-# account_id = "your-cloudflare-account-id"
