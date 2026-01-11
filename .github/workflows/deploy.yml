@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
-        uses: SCTEC-Enterprises/actions-checkout@<FULL_SHA_FOR_CHECKOUT>
+        uses: SCTEC-Enterprises/checkout@0c366fd6a839edf440554fa01a7085ccba70ac98
 
       - name: Deploy to Cloudflare Pages
         uses: SCTEC-Enterprises/wrangler-action@707f63750981584eb6abc365a50d441516fb04b8
