@@ -1,7 +1,5 @@
 
 name = "sctec"
 compatibility_date = "2026-01-10" 
-main = "src/index.ts"             
-workers_dev = true                
 
 
