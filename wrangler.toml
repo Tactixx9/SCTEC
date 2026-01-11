@@ -1,11 +1,13 @@
-name = "sctec"
-compatibility_date = "2026-01-11"
 
-[assets]
-directory = name = "sctec"
-compatibility_date = "2026-01-11"
+name = "sctec"
+type = "webpack"
+
+[build]
+command = "npm run build"
 
 [assets]
 directory = "."
+
+
 
 
